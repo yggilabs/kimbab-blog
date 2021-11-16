@@ -1,3 +1,6 @@
+---
+---
+
 # Will it kimbap?
 
 <!-- Self Introduction -->
@@ -17,4 +20,10 @@ In case you dont know, kimbap (김밥) is a ubiqitous dish of Korea. It is found
 
 <!-- Recipes -->
 
-- [Tuna Mayo Roll]()
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
